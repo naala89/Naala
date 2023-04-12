@@ -1,9 +1,8 @@
 <template>
-  <el-menu class="el-menu-demo aos-menu"
+  <el-menu class="el-menu-demo naala-menu"
       mode="horizontal"
-      background-color="#666666"
-      text-color="#fff"
-      active-text-color="#ffd04b"
+      text-color="#FFF"
+      active-text-color="#A0A4AE"
   >
     <el-menu-item index="1">
       <router-link :to="{ name: 'home' }" custom v-slot="{ href, navigate }">
@@ -49,8 +48,9 @@ export default {
 }
 </script>
 
-<style scoped>
-.aos-menu {
-  height: 80px
+<style scoped lang="scss">
+.naala-menu {
+  height: 80px;
+  background-color: $color-header;
 }
 </style>

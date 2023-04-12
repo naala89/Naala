@@ -1,21 +1,54 @@
 import { createRouter } from 'vue-router';
 import { createWebHashHistory } from 'vue-router';
 
-const routeDef = {
+const routes = {
     routes: [{
-        path: '/hello-world',
+        path: '/',
+        name: 'home',
         components: {
-            default: () => import('@/pages/HelloWorld')
+            default: () => import('@/pages/HomePage'),
+            Menu: () => import('@/components/MenuRegion'),
+            Footer: () => import('@/components/FooterRegion')
         }
     }, {
-        path: '/',
+        path: '/about',
+        name: 'about',
         components: {
-            default: () => import('@/pages/Home')
+            Menu: () => import('@/components/MenuRegion'),
+            default: () => import('@/pages/AboutPage')
+        }
+    }, {
+        path: '/blog',
+        name: 'blog',
+        components: {
+            Menu: () => import('@/components/MenuRegion'),
+            default: () => import('@/pages/BlogPage')
+        }
+    }, {
+        path: '/contact',
+        name: 'contact',
+        components: {
+            Menu: () => import('@/components/MenuRegion'),
+            default: () => import('@/pages/ContactPage')
+        }
+    }, {
+        path: '/portfolio',
+        name: 'portfolio',
+        components: {
+            Menu: () => import('@/components/MenuRegion'),
+            default: () => import('@/pages/PortfolioPage')
+        }
+    }, {
+        path: '/services',
+        name: 'services',
+        components: {
+            Menu: () => import('@/components/MenuRegion'),
+            default: () => import('@/pages/ServicesPage')
         }
     }],
     history: createWebHashHistory()
 }
 
-const router = createRouter(routeDef)
+const router = createRouter(routes)
 
 export default router

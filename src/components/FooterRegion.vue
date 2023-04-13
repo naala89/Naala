@@ -1,15 +1,21 @@
 <template>
   <el-footer>
-    <el-row :gutter="20">
+    <el-row>
 
-      <el-col :span="8">
-        <el-menu
-            class="el-menu-vertical-demo"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
+      <el-col :xl="3" :lg="0" :md="0" :sm="0" :xs="0">
+        <el-menu class="el-menu-vertical-demo"
+                 background-color="#000"
+                 text-color="#fff"
+                 active-text-color="#ffd04b">
+        </el-menu>
+      </el-col>
+      <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
+        <el-menu class="el-menu-vertical-demo"
+                 background-color="#000"
+                 text-color="#fff"
+                 active-text-color="#ffd04b">
           <el-menu-item index="1">
-              <h3>Menu</h3>
+            <h3>Menu</h3>
           </el-menu-item>
           <el-menu-item index="2">
             <router-link :to="{ name: 'home' }" custom v-slot="{ href, navigate }">
@@ -43,67 +49,66 @@
           </el-menu-item>
         </el-menu>
       </el-col>
-
-      <el-col :span="8">
-        <el-menu
-            class="el-menu-vertical-demo"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
+      <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
+        <el-menu class="el-menu-vertical-demo"
+                 background-color="#000"
+                 text-color="#fff"
+                 active-text-color="#ffd04b">
           <el-menu-item index="1">
             <h3>Latest Posts</h3>
           </el-menu-item>
           <el-menu-item index="2">
-            <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
           </el-menu-item>
           <el-menu-item index="3">
-            <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
           </el-menu-item>
           <el-menu-item index="4">
-            <a href="#">Aliquam tincidunt mauris eu risus.</a>
           </el-menu-item>
           <el-menu-item index="5">
-            <a href="#">Vestibulum auctor dapibus neque.</a>
           </el-menu-item>
           <el-menu-item index="6">
-            <a href="#">Nunc dignissim risus id metus.</a>
           </el-menu-item>
           <el-menu-item index="7">
-            <a href="#">Cras ornare tristique elit.</a>
           </el-menu-item>
         </el-menu>
       </el-col>
-
-      <el-col :span="8">
-        <el-menu
-            class="el-menu-vertical-demo"
-            background-color="#545c64"
-            text-color="#fff"
-            active-text-color="#ffd04b">
+      <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
+        <el-menu class="el-menu-vertical-demo"
+                 background-color="#000"
+                 text-color="#fff"
+                 active-text-color="#ffd04b">
           <el-menu-item index="1">
             <h3>Contact Us</h3>
           </el-menu-item>
           <el-menu-item index="2">
             <dl>
               <dt>Enquiries:</dt>
-              <dd><a href="#">Click here</a></dd>
+              <dd><a href="/contact">Click here</a></dd>
             </dl>
             <dl>
-              <dt>Skype:</dt>
-              <dd>laughingman77</dd>
-            </dl>
-            <dl>
-              <dt>Tel:</dt>
-              <dd>0400555444</dd>
+              <dt>Email:</dt>
+              <dd><a href="mailto:contact@naala.com.au">contact@naala.com.au</a></dd>
             </dl>
           </el-menu-item>
-<!--          <el-menu-item index="3">-->
-<!--            <h3>What we're listening to</h3>-->
-<!--            <iframe src="https://embed.spotify.com/?uri=spotify:track:41X9To0bQ4fpoSRri4NHiI" width="300"-->
-<!--                    height="80" frameborder="0" allowtransparency="true"></iframe>-->
-<!--          </el-menu-item>-->
+          <el-menu-item index="3"></el-menu-item>
+          <el-menu-item index="4">
+            <p>What we're listening to</p>
+          </el-menu-item>
+          <el-menu-item index="5">
+            <iframe src="https://embed.spotify.com/?uri=spotify:track:41X9To0bQ4fpoSRri4NHiI" width="300"
+                    height="80" frameborder="0" allowtransparency="true"></iframe>
+          </el-menu-item>
+          <el-menu-item index="6"></el-menu-item>
+          <el-menu-item index="7"></el-menu-item>
         </el-menu>
       </el-col>
+<!--      <el-col :xl="3" :lg="4" :md="11" :sm="11" :xs="24">-->
+<!--      </el-col>-->
+
+<!--      <el-col :span="3">-->
+<!--      </el-col>-->
+
+<!--      <el-col :span="4">-->
+<!--      </el-col>-->
 
     </el-row>
   </el-footer>
@@ -116,4 +121,10 @@ export default {
 </script>
 
 <style scoped>
+.el-row {
+  background-color: #000;
+}
+li a {
+  color: #ddd;
+}
 </style>

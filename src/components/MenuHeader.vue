@@ -31,11 +31,11 @@
           <a :href="href" @click="navigate">Portfolio</a>
         </router-link>
       </el-menu-item>
-      <el-menu-item index="6">
-        <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">
-          <a :href="href" @click="navigate">Blog</a>
-        </router-link>
-      </el-menu-item>
+<!--      <el-menu-item index="6">-->
+<!--        <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">-->
+<!--          <a :href="href" @click="navigate">Blog</a>-->
+<!--        </router-link>-->
+<!--      </el-menu-item>-->
       <el-menu-item index="7">
         <router-link :to="{ name: 'contact' }" custom v-slot="{ href, navigate }">
           <a :href="href" @click="navigate">Contact</a>

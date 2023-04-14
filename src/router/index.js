@@ -16,7 +16,7 @@ const routes = {
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/AboutMain'),
-            RightSidebar: () => import('@/components/ContentHighlight'),
+            // RightSidebar: () => import('@/components/ContentHighlight'),
             Footer: () => import('@/components/FooterRegion')
         }
     }, {
@@ -25,7 +25,7 @@ const routes = {
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/ServicesMain'),
-            RightSidebar: () => import('@/components/ContentHighlight'),
+            // RightSidebar: () => import('@/components/ContentHighlight'),
             Footer: () => import('@/components/FooterRegion')
         }
     }, {
@@ -58,7 +58,7 @@ const routes = {
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/posts/LCNCDefinition'),
-            RightSidebar: () => import('@/components/ContentHighlight'),
+            // RightSidebar: () => import('@/components/ContentHighlight'),
             Footer: () => import('@/components/FooterRegion')
         }
     }],

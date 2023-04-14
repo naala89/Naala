@@ -16,32 +16,32 @@
                  text-color="#fff"
                  active-text-color="#ffd04b">
           <h3>Menu</h3>
-          <el-menu-item index="2">
+          <el-menu-item index="1">
             <router-link :to="{ name: 'home' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">Home</a>
             </router-link>
           </el-menu-item>
-          <el-menu-item index="3">
+          <el-menu-item index="2">
             <router-link :to="{ name: 'about' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">About</a>
             </router-link>
           </el-menu-item>
-          <el-menu-item index="4">
+          <el-menu-item index="3">
             <router-link :to="{ name: 'services' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">Services</a>
             </router-link>
           </el-menu-item>
-          <el-menu-item index="5">
+          <el-menu-item index="4">
             <router-link :to="{ name: 'portfolio' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">Portfolio</a>
             </router-link>
           </el-menu-item>
+<!--          <el-menu-item index="5">-->
+<!--            <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">-->
+<!--              <a :href="href" @click="navigate">Blog</a>-->
+<!--            </router-link>-->
+<!--          </el-menu-item>-->
           <el-menu-item index="6">
-            <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">
-              <a :href="href" @click="navigate">Blog</a>
-            </router-link>
-          </el-menu-item>
-          <el-menu-item index="7">
             <router-link :to="{ name: 'contact' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">Contact</a>
             </router-link>
@@ -50,8 +50,24 @@
       </el-col>
 
       <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
-        <h3>Latest Posts</h3>
-        <latest-posts></latest-posts>
+        <el-menu class="el-menu-vertical-demo"
+                 background-color="#000"
+                 text-color="#fff"
+                 active-text-color="#ffd04b">
+          <h3>Other Links</h3>
+          <el-menu-item index="1">
+            <a href="https://www.apiopenstudio.com">ApiOpenStudio</a>
+          </el-menu-item>
+          <el-menu-item index="2">
+            <a href="https://wiki.apiopenstudio.com">ApiOpenStudio Wiki</a>
+          </el-menu-item>
+          <el-menu-item index="3">
+            <a href="https://phpdoc.apiopenstudio.com">ApiOpenStudio PHPDoc</a>
+          </el-menu-item>
+          <el-menu-item index="4"></el-menu-item>
+          <el-menu-item index="5"></el-menu-item>
+          <el-menu-item index="6"></el-menu-item>
+        </el-menu>
       </el-col>
 
       <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
@@ -80,10 +96,7 @@
 </template>
 
 <script>
-import LatestPosts from "@/components/LatestPosts"
 export default {
-  components: {LatestPosts},
-  LatestPosts: "latest-posts"
 }
 </script>
 

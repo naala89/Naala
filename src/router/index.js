@@ -6,44 +6,60 @@ const routes = {
         path: '/',
         name: 'home',
         components: {
-            default: () => import('@/pages/HomePage'),
-            Menu: () => import('@/components/MenuRegion'),
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/HomeMain'),
             Footer: () => import('@/components/FooterRegion')
         }
     }, {
         path: '/about',
         name: 'about',
         components: {
-            Menu: () => import('@/components/MenuRegion'),
-            default: () => import('@/pages/AboutPage')
-        }
-    }, {
-        path: '/blog',
-        name: 'blog',
-        components: {
-            Menu: () => import('@/components/MenuRegion'),
-            default: () => import('@/pages/BlogPage')
-        }
-    }, {
-        path: '/contact',
-        name: 'contact',
-        components: {
-            Menu: () => import('@/components/MenuRegion'),
-            default: () => import('@/pages/ContactPage')
-        }
-    }, {
-        path: '/portfolio',
-        name: 'portfolio',
-        components: {
-            Menu: () => import('@/components/MenuRegion'),
-            default: () => import('@/pages/PortfolioPage')
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/AboutMain'),
+            RightSidebar: () => import('@/components/ContentHighlight'),
+            Footer: () => import('@/components/FooterRegion')
         }
     }, {
         path: '/services',
         name: 'services',
         components: {
-            Menu: () => import('@/components/MenuRegion'),
-            default: () => import('@/pages/ServicesPage')
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/ServicesMain'),
+            RightSidebar: () => import('@/components/ContentHighlight'),
+            Footer: () => import('@/components/FooterRegion')
+        }
+    }, {
+        path: '/portfolio',
+        name: 'portfolio',
+        components: {
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/PortfolioMain'),
+            Footer: () => import('@/components/FooterRegion')
+        }
+    }, {
+        path: '/blog',
+        name: 'blog',
+        components: {
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/BlogMain'),
+            Footer: () => import('@/components/FooterRegion')
+        }
+    }, {
+        path: '/contact',
+        name: 'contact',
+        components: {
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/ContactMain'),
+            Footer: () => import('@/components/FooterRegion')
+        }
+    }, {
+        path: '/blog/lcnc-definition',
+        name: 'LCNCDefinition',
+        components: {
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/posts/LCNCDefinition'),
+            RightSidebar: () => import('@/components/ContentHighlight'),
+            Footer: () => import('@/components/FooterRegion')
         }
     }],
     history: createWebHashHistory()

@@ -1,11 +1,11 @@
 <template>
-  <div class="sm:flex container p-5 mx-auto content justify-betweenflex-wrap">
-    <RouterView name="Menu"></RouterView>
-    <RouterView class="view main-content w-full order-2"></RouterView>
+  <RouterView name="Header"></RouterView>
+  <el-container>
     <RouterView name="LeftSidebar"></RouterView>
+    <RouterView></RouterView>
     <RouterView name="RightSidebar"></RouterView>
-    <RouterView name="Footer"></RouterView>
-  </div>
+  </el-container>
+  <RouterView name="Footer"></RouterView>
 </template>
 
 <style lang="scss">

@@ -9,14 +9,13 @@
                  active-text-color="#ffd04b">
         </el-menu>
       </el-col>
+
       <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
         <el-menu class="el-menu-vertical-demo"
                  background-color="#000"
                  text-color="#fff"
                  active-text-color="#ffd04b">
-          <el-menu-item index="1">
-            <h3>Menu</h3>
-          </el-menu-item>
+          <h3>Menu</h3>
           <el-menu-item index="2">
             <router-link :to="{ name: 'home' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">Home</a>
@@ -49,46 +48,20 @@
           </el-menu-item>
         </el-menu>
       </el-col>
+
       <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
-        <el-menu class="el-menu-vertical-demo"
-                 background-color="#000"
-                 text-color="#fff"
-                 active-text-color="#ffd04b">
-          <el-menu-item index="1">
-            <h3>Latest Posts</h3>
-          </el-menu-item>
-          <el-menu-item index="2">
-          </el-menu-item>
-          <el-menu-item index="3">
-          </el-menu-item>
-          <el-menu-item index="4">
-          </el-menu-item>
-          <el-menu-item index="5">
-          </el-menu-item>
-          <el-menu-item index="6">
-          </el-menu-item>
-          <el-menu-item index="7">
-          </el-menu-item>
-        </el-menu>
+        <h3>Latest Posts</h3>
+        <latest-posts></latest-posts>
       </el-col>
+
       <el-col :xl="6" :lg="8" :md="12" :sm="12" :xs="24">
         <el-menu class="el-menu-vertical-demo"
                  background-color="#000"
                  text-color="#fff"
                  active-text-color="#ffd04b">
-          <el-menu-item index="1">
-            <h3>Contact Us</h3>
-          </el-menu-item>
-          <el-menu-item index="2">
-            <dl>
-              <dt>Enquiries:</dt>
-              <dd><a href="/contact">Click here</a></dd>
-            </dl>
-            <dl>
-              <dt>Email:</dt>
-              <dd><a href="mailto:contact@naala.com.au">contact@naala.com.au</a></dd>
-            </dl>
-          </el-menu-item>
+          <h3>Contact Us</h3>
+          <el-menu-item index="2">Email:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a></el-menu-item>
+          <el-menu-item index="2">Phone:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a></el-menu-item>
           <el-menu-item index="3"></el-menu-item>
           <el-menu-item index="4">
             <p>What we're listening to</p>
@@ -101,26 +74,20 @@
           <el-menu-item index="7"></el-menu-item>
         </el-menu>
       </el-col>
-<!--      <el-col :xl="3" :lg="4" :md="11" :sm="11" :xs="24">-->
-<!--      </el-col>-->
-
-<!--      <el-col :span="3">-->
-<!--      </el-col>-->
-
-<!--      <el-col :span="4">-->
-<!--      </el-col>-->
 
     </el-row>
   </el-footer>
 </template>
 
 <script>
+import LatestPosts from "@/components/LatestPosts"
 export default {
-  name: 'FooterRegion',
+  components: {LatestPosts},
+  LatestPosts: "latest-posts"
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .el-row {
   background-color: #000;
 }

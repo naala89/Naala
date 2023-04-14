@@ -32,34 +32,34 @@ Possible honeycomb options
             <div class="inner">
               <ul>
                 <li class="drupal">
-                  <a href="#">
+                  <router-link to="/services">
                     <h2>Drupal Development</h2>
                     <p><span class="visuallyhidden-mobile">Read more</span><i class="icon"> </i></p>
-                  </a>
+                  </router-link>
                 </li>
                 <li class="php">
-                  <a href="#">
+                  <router-link to="/services">
                     <h2>Websites: PHP + VueJS</h2>
                     <p><span class="visuallyhidden-mobile">Read more</span><i class="icon"> </i></p>
-                  </a>
+                  </router-link>
                 </li>
                 <li class="api">
-                  <a href="#">
+                  <router-link to="/services">
                     <h2>API + Middleware</h2>
                     <p><span class="visuallyhidden-mobile">Read more</span><i class="icon"> </i></p>
-                  </a>
+                  </router-link>
                 </li>
                 <li class="consultancy">
-                  <a href="#">
+                  <router-link to="/services">
                     <h2>Consultancy + Strategy</h2>
                     <p><span class="visuallyhidden-mobile">Read more</span><i class="icon"> </i></p>
-                  </a>
+                  </router-link>
                 </li>
                 <li class="integration visuallyhidden-mobile visuallyhidden-tablet">
-                  <a href="#">
+                  <router-link to="/services">
                     <h2>Integration systems</h2>
                     <p><span class="visuallyhidden-mobile">Read more</span><i class="icon"> </i></p>
-                  </a>
+                  </router-link>
                 </li>
               </ul>
             </div>
@@ -88,8 +88,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "@/assets/scss/_main.scss";
 img {
   max-width: 100%;
+  display:block;
 }
 
 .home-headline {
@@ -217,7 +219,7 @@ img {
       }
 
       .drupal, .integration {
-        display: none;
+        //display: none;
       }
     }
   }
@@ -387,7 +389,7 @@ img {
     }
 
     .drupal, .integration {
-      display: none;
+      //display: none;
     }
   }
   .hero {

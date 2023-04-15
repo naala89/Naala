@@ -8,70 +8,48 @@
 
     <h1>Portfolio</h1>
 
-    <el-card>
-      <a href="https://www.caresouth.org.au/" target="_blank">
-        <img src="@/assets/images/caresouth.jpg" width="250" alt="CareSouth">
-        <h3>CareSouth</h3>
-        <p>Drupal site</p>
-      </a>
-    </el-card>
-    <el-card>
-      <a href="https://www.picturedrift.com.au/" target="_blank">
-        <div style="background-color: black; width: 250px">
-          <img src="@/assets/images/picturedrift.png" width="250" alt="PictureDrift">
-        </div>
-        <h3>PictureDrift</h3>
-        <p>Drupal site</p>
-      </a>
-    </el-card>
-    <el-card>
-      <a href="https://www.swellnet.com/" target="_blank">
-        <img src="@/assets/images/swellnet.svg" width="250" alt="Swellnet">
-        <h3>Swellnet</h3>
-        <p>Large Drupal site, with sister API integration</p>
-      </a>
-    </el-card>
-    <el-card>
-      <a href="https://vlone.ltd/" target="_blank">
-        <img src="@/assets/images/vlone.png" width="250" alt="VLONE">
-        <h3>VLONE</h3>
-        <p>Heavily customised Shopify site</p>
-      </a>
-    </el-card>
-    <el-card>
-      <a href="https://ofracosmetics.com" target="_blank">
-        <svg viewBox="0 0 91 21" focusable="false" class="chakra-icon css-6z6anc" role="img" aria-hidden="true" style="width: 15em; height: 100%">
-          <path
-              d="M41.1093 6.71102C40.9326 6.01596 40.697 5.35112 40.4025 4.71651C40.1081 4.05167 39.6663 3.47749 39.1657 2.93353C38.6062 2.35935 37.8995 1.87584 37.1044 1.5132C36.3093 1.15056 35.3964 0.969238 34.3952 0.969238C33.3939 0.969238 32.481 1.15056 31.6859 1.5132C30.8908 1.87584 30.2135 2.35935 29.6246 2.93353C29.0945 3.47749 28.6822 4.05167 28.3878 4.71651C28.0933 5.35112 27.8577 6.04618 27.681 6.71102C27.5338 7.40608 27.416 8.10113 27.3865 8.82641C27.3571 9.52147 27.3276 10.2165 27.3276 10.9116C27.3276 11.5764 27.3571 12.3017 27.3865 12.9968C27.416 13.722 27.5338 14.4473 27.681 15.1424C27.8577 15.8374 28.0933 16.5023 28.3878 17.1671C28.6822 17.8319 29.124 18.4061 29.6246 18.9501C30.1841 19.5243 30.8908 20.0078 31.6859 20.3704C32.481 20.7331 33.3939 20.9144 34.3952 20.9144C35.3964 20.9144 36.3093 20.7331 37.1044 20.3704C37.8995 20.0078 38.5768 19.5243 39.1657 18.9501C39.6958 18.4061 40.1081 17.8319 40.4025 17.1671C40.697 16.5325 40.9326 15.8374 41.1093 15.1424C41.2565 14.4473 41.3743 13.722 41.4038 12.9968C41.4332 12.2715 41.4627 11.5764 41.4627 10.9116C41.4627 10.2467 41.4332 9.55169 41.4038 8.82641C41.3743 8.10113 41.286 7.40608 41.1093 6.71102ZM39.578 12.6643C39.5485 13.2687 39.4897 13.8731 39.3719 14.4775C39.2541 15.0819 39.0774 15.6561 38.8418 16.2001C38.6062 16.744 38.2823 17.2275 37.87 17.6506C37.4283 18.1039 36.8982 18.4363 36.3093 18.6781C35.1314 19.1616 33.6884 19.1616 32.5105 18.6781C31.9215 18.4363 31.3915 18.1039 30.9497 17.6506C30.5375 17.2275 30.2135 16.744 29.978 16.2001C29.7424 15.6561 29.5657 15.0517 29.4479 14.4775C29.3301 13.8731 29.2712 13.2687 29.2418 12.6643C29.2123 12.0599 29.2123 11.4555 29.2123 10.9116C29.2123 10.3676 29.2123 9.79345 29.2418 9.15883C29.2712 8.55443 29.3301 7.91981 29.4479 7.31542C29.5657 6.71102 29.7424 6.13684 29.978 5.59288C30.2135 5.04892 30.5375 4.56541 30.9497 4.17255C31.3915 3.71925 31.9215 3.38683 32.5105 3.14507C33.0994 2.90331 33.7473 2.78243 34.4246 2.78243C35.1019 2.78243 35.7498 2.90331 36.3387 3.14507C36.9277 3.38683 37.4577 3.71925 37.8995 4.17255C38.3117 4.59563 38.6357 5.07914 38.8712 5.59288C39.1068 6.13684 39.2835 6.71102 39.4013 7.31542C39.5191 7.91981 39.578 8.52421 39.6074 9.15883C39.6369 9.79345 39.6369 10.3676 39.6369 10.9116C39.6369 11.4555 39.6074 12.0599 39.578 12.6643Z"
-              fill="black"></path>
-          <path d="M45.3203 20.6431H47.1166V13.0881H54.7437V11.2749H47.1166V3.17599H56.9817V1.36279H45.3203V20.6431Z"
-                fill="black"></path>
-          <path
-              d="M71.5879 10.731C72.2946 9.76393 72.648 8.58535 72.648 7.25568C72.648 6.3793 72.5008 5.56336 72.2357 4.8683C71.9707 4.14302 71.5584 3.50841 70.9989 2.99467C70.4689 2.48093 69.7916 2.08807 69.0259 1.78587C68.2603 1.51389 67.3474 1.36279 66.3756 1.36279H59.6025V20.6733H61.3989V13.0881H67.2001L70.3805 20.6733H72.3535L68.9965 12.6348C70.0566 12.2722 70.94 11.6073 71.5879 10.731ZM69.6443 10.2172C68.8787 10.9123 67.7891 11.2749 66.3756 11.2749H61.3989V3.20621H66.3756C67.7891 3.20621 68.8787 3.59907 69.6443 4.2639C70.41 4.92874 70.7633 5.926 70.7633 7.22546C70.7633 8.52491 70.41 9.52217 69.6443 10.2172Z"
-              fill="black"></path>
-          <path
-              d="M88.5795 20.6431H90.4347L83.3967 1.36279H81.777L74.7979 20.6431H76.6825L79.3917 13.1183L79.1267 13.9041L79.3917 13.1183H85.8114L88.5795 20.6431ZM80.069 11.2749L82.5721 4.2639L80.069 11.2749L82.5721 4.2639L85.1341 11.2749H80.069Z"
-              fill="black"></path>
-          <path d="M19.3474 10.3671L10.1597 0.938477H19.3474V10.3671ZM12.3683 1.87529L18.4346 8.10059V1.87529H12.3683Z"
-                fill="black"></path>
-          <path d="M9.18777 0.938477L0 10.3671V0.938477H9.18777ZM0.912888 8.10059L6.97917 1.87529H0.912888V8.10059Z"
-                fill="black"></path>
-          <path d="M0 11.4551L9.18777 20.8837L0 20.9139V11.4551ZM6.97917 19.9771L0.912888 13.7518V19.9771H6.97917Z"
-                fill="black"></path>
-          <path
-              d="M10.1597 20.9135L19.3474 11.4849V20.9135H10.1597ZM18.4346 13.7514L12.3977 19.9767H18.464L18.4346 13.7514Z"
-              fill="black"></path>
-        </svg>
-        <h3>Ofra</h3>
-        <p>Drupal e-commerce site (no longer active)</p>
-      </a>
-    </el-card>
+    <portfolio-box link="https://www.caresouth.org.au/"
+                   :image="require('@/assets/images/caresouth.jpg')"
+                   alt_text="CareSouth"
+                   image_bg="white"
+                   title="CareSouth"
+                   subtext="Drupal site"></portfolio-box>
+
+    <portfolio-box link="https://www.picturedrift.com.au/"
+                   :image="require('@/assets/images/picturedrift.png')"
+                   alt_text="PictureDrift"
+                   image_bg="black"
+                   title="PictureDrift"
+                   subtext="Drupal site"></portfolio-box>
+
+    <portfolio-box link="https://www.swellnet.com/"
+                   :image="require('@/assets/images/swellnet.svg')"
+                   alt_text="Swellnet"
+                   image_bg="white"
+                   title="Swellnet"
+                   subtext="Enterprise Drupal site, with API & integration"></portfolio-box>
+
+    <portfolio-box link="https://vlone.ltd/"
+                   :image="require('@/assets/images/vlone.png')"
+                   alt_text="VLONE"
+                   image_bg="white"
+                   title="VLONE"
+                   subtext="Heavily customised Shopify site"></portfolio-box>
+
+    <portfolio-box link="https://ofracosmetics.com"
+                   image="https://cdn.shopify.com/s/files/1/0989/8416/files/ofra-lockup.svg?v=1645014376"
+                   alt_text="Ofra"
+                   image_bg="white"
+                   title="Ofra"
+                   subtext="Drupal e-commerce site - sadly departed"></portfolio-box>
   </el-main>
 </template>
 
 <script>
+import PortfolioBox from "@/components/PortfolioBox";
 export default {
-  name: 'PortfolioMain'
+  components: {PortfolioBox},
+  PortfolioBox: "portfolio-box",
 }
 </script>
 

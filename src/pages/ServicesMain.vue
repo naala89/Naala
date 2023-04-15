@@ -45,7 +45,6 @@ import ServiceBox from "@/components/ServiceBox";
 export default {
   name: 'ServicesMain',
   components: {ServiceBox},
-  component: {ServiceBox},
   ServiceBox: "service-box",
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <el-main>
 
-    <el-breadcrumb separator="&gt;">
+    <el-breadcrumb separator=">">
       <el-breadcrumb-item :to="{ path: '/' }">Home</el-breadcrumb-item>
       <el-breadcrumb-item :to="{ path: '/portfolio' }">Portfolio</el-breadcrumb-item>
     </el-breadcrumb>

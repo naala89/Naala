@@ -36,11 +36,11 @@
               <a :href="href" @click="navigate">Portfolio</a>
             </router-link>
           </el-menu-item>
-<!--          <el-menu-item index="5">-->
-<!--            <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">-->
-<!--              <a :href="href" @click="navigate">Blog</a>-->
-<!--            </router-link>-->
-<!--          </el-menu-item>-->
+          <!--          <el-menu-item index="5">-->
+          <!--            <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">-->
+          <!--              <a :href="href" @click="navigate">Blog</a>-->
+          <!--            </router-link>-->
+          <!--          </el-menu-item>-->
           <el-menu-item index="6">
             <router-link :to="{ name: 'contact' }" custom v-slot="{ href, navigate }">
               <a :href="href" @click="navigate">Contact</a>
@@ -76,7 +76,8 @@
                  text-color="#fff"
                  active-text-color="#ffd04b">
           <h3>Contact Us</h3>
-          <el-menu-item index="2">Email:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a></el-menu-item>
+          <el-menu-item index="2">Email:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a>
+          </el-menu-item>
           <el-menu-item index="2">Phone:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a></el-menu-item>
           <el-menu-item index="3"></el-menu-item>
           <el-menu-item index="4">
@@ -96,15 +97,20 @@
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
 <style scoped lang="scss">
 .el-row {
   background-color: #000;
 }
-li a {
-  color: #ddd;
+
+li a,
+h3 {
+  color: #DDD;
+}
+
+ul {
+  border-right: 0;
 }
 </style>

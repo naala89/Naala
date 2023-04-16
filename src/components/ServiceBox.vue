@@ -4,7 +4,7 @@
       <h2>{{ title }}</h2>
       <p v-html="paragraph"></p>
       <el-row type="flex" justify="center">
-        <img :src="image" alt="{{alt_text}}"/>
+        <img :src="image" :alt="alt_text"/>
       </el-row>
     </el-card>
   </el-col>

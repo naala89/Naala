@@ -1,7 +1,7 @@
 <template>
   <el-card>
-    <a href="{{link}}" target="_blank">
-      <img :src="image" width="250" alt="{{alt_text}}">
+    <a :href="link" target="_blank">
+      <img :src="image" width="250" :alt="alt_text">
       <h3>{{title}}</h3>
       <p><i>({{subtext}})</i></p>
     </a>

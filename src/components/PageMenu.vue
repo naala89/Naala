@@ -1,6 +1,6 @@
 <template>
   <el-menu-item>
-    <router-link :to="{ name: 'Home' }" custom v-slot="{ href, navigate }">
+    <router-link :to="{ name: 'Home' }" custom v-slot="{ href, navigate }" text-color="#fff">
       <a :href="href" @click="navigate">Home</a>
     </router-link>
   </el-menu-item>
@@ -35,5 +35,8 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
+a {
+  color: #DDD;
+}
 </style>

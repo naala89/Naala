@@ -22,6 +22,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.el-card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 img {
   background-color: v-bind(image_bg);
 }

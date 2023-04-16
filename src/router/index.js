@@ -50,14 +50,14 @@ const routes = {
             default: () => import('@/pages/ContactMain'),
             Footer: () => import('@/components/FooterRegion'),
         }
-    }, {
-        path: '/blog/lcnc-definition',
-        name: 'LCNCDefinition',
-        components: {
-            Header: () => import('@/components/MenuHeader'),
-            default: () => import('@/posts/LCNCDefinition'),
-            Footer: () => import('@/components/FooterRegion'),
-        },
+    // }, {
+    //     path: '/blog/lcnc-definition',
+    //     name: 'LCNCDefinition',
+    //     components: {
+    //         Header: () => import('@/components/MenuHeader'),
+    //         default: () => import('@/posts/LCNCDefinition'),
+    //         Footer: () => import('@/components/FooterRegion'),
+    //     },
     }, {
         path: '/:catchAll(.*)*',
         name: "Not Found",

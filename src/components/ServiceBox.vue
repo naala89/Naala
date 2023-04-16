@@ -22,9 +22,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.el-card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 @media screen and (min-width: 768px) {
   .el-card {
-    min-height: 24rem;
+    min-height: 26rem;
   }
 }
 img {

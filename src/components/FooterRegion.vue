@@ -12,36 +12,7 @@
                  background-color="#000"
                  text-color="#fff"
                  active-text-color="#ffd04b">
-          <el-menu-item index="1">
-            <router-link :to="{ name: 'home' }" custom v-slot="{ href, navigate }">
-              <a :href="href" @click="navigate">Home</a>
-            </router-link>
-          </el-menu-item>
-          <el-menu-item index="2">
-            <router-link :to="{ name: 'about' }" custom v-slot="{ href, navigate }">
-              <a :href="href" @click="navigate">About</a>
-            </router-link>
-          </el-menu-item>
-          <el-menu-item index="3">
-            <router-link :to="{ name: 'services' }" custom v-slot="{ href, navigate }">
-              <a :href="href" @click="navigate">Services</a>
-            </router-link>
-          </el-menu-item>
-          <el-menu-item index="4">
-            <router-link :to="{ name: 'portfolio' }" custom v-slot="{ href, navigate }">
-              <a :href="href" @click="navigate">Portfolio</a>
-            </router-link>
-          </el-menu-item>
-          <!--          <el-menu-item index="5">-->
-          <!--            <router-link :to="{ name: 'blog' }" custom v-slot="{ href, navigate }">-->
-          <!--              <a :href="href" @click="navigate">Blog</a>-->
-          <!--            </router-link>-->
-          <!--          </el-menu-item>-->
-          <el-menu-item index="6">
-            <router-link :to="{ name: 'contact' }" custom v-slot="{ href, navigate }">
-              <a :href="href" @click="navigate">Contact</a>
-            </router-link>
-          </el-menu-item>
+          <page-menu></page-menu>
         </el-menu>
       </el-col>
 
@@ -88,7 +59,12 @@
 </template>
 
 <script>
-export default {}
+import PageMenu from "@/components/PageMenu";
+export default {
+  components: {PageMenu},
+  component: PageMenu,
+  PageMenu: "page-menu",
+}
 </script>
 
 <style scoped lang="scss">

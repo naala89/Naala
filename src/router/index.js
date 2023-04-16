@@ -4,53 +4,51 @@ import { createWebHashHistory } from 'vue-router';
 const routes = {
     routes: [{
         path: '/',
-        name: 'home',
+        name: 'Home',
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/HomeMain'),
-            Footer: () => import('@/components/FooterRegion')
+            Footer: () => import('@/components/FooterRegion'),
         }
     }, {
         path: '/about',
-        name: 'about',
+        name: 'About',
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/AboutMain'),
-            // RightSidebar: () => import('@/components/ContentHighlight'),
-            Footer: () => import('@/components/FooterRegion')
+            Footer: () => import('@/components/FooterRegion'),
         }
     }, {
         path: '/services',
-        name: 'services',
+        name: 'Services',
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/ServicesMain'),
-            // RightSidebar: () => import('@/components/ContentHighlight'),
-            Footer: () => import('@/components/FooterRegion')
+            Footer: () => import('@/components/FooterRegion'),
         }
     }, {
         path: '/portfolio',
-        name: 'portfolio',
+        name: 'Portfolio',
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/PortfolioMain'),
-            Footer: () => import('@/components/FooterRegion')
+            Footer: () => import('@/components/FooterRegion'),
         }
     }, {
-        path: '/blog',
-        name: 'blog',
-        components: {
-            Header: () => import('@/components/MenuHeader'),
-            default: () => import('@/pages/BlogMain'),
-            Footer: () => import('@/components/FooterRegion')
-        }
-    }, {
+    //     path: '/blog',
+    //     name: 'Blog',
+    //     components: {
+    //         Header: () => import('@/components/MenuHeader'),
+    //         default: () => import('@/pages/BlogMain'),
+    //         Footer: () => import('@/components/FooterRegion'),
+    //     }
+    // }, {
         path: '/contact',
-        name: 'contact',
+        name: 'Contact',
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/pages/ContactMain'),
-            Footer: () => import('@/components/FooterRegion')
+            Footer: () => import('@/components/FooterRegion'),
         }
     }, {
         path: '/blog/lcnc-definition',
@@ -58,9 +56,16 @@ const routes = {
         components: {
             Header: () => import('@/components/MenuHeader'),
             default: () => import('@/posts/LCNCDefinition'),
-            // RightSidebar: () => import('@/components/ContentHighlight'),
-            Footer: () => import('@/components/FooterRegion')
-        }
+            Footer: () => import('@/components/FooterRegion'),
+        },
+    }, {
+        path: '/:catchAll(.*)*',
+        name: "Not Found",
+        components: {
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/PageNotFound'),
+            Footer: () => import('@/components/FooterRegion'),
+        },
     }],
     history: createWebHashHistory()
 }

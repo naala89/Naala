@@ -7,7 +7,7 @@
              active-text-color="#A0A4AE"
     >
       <el-menu-item>
-        <router-link :to="{ name: 'home' }" custom v-slot="{ href, navigate }">
+        <router-link :to="{ name: 'Home' }" custom v-slot="{ href, navigate }">
           <a :href="href" @click="navigate"><img src='@/assets/images/logo-name.png' alt="Naala Logo"></a>
         </router-link>
       </el-menu-item>

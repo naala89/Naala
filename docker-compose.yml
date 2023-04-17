@@ -1,19 +1,19 @@
 version: '3'
 
 services:
-  naala:
+  nginx:
     build:
       context: .
       dockerfile: Dockerfile
     image: nginx:stable-alpine
-    container_name: naala
+    container_name: nginx
     restart: unless-stopped
     volumes:
       - ./docker/certbot/conf:/etc/letsencrypt
-      - ./docker/certbot/www:/usr/share/nginx/html/certbot
+      - ./docker/certbot/www/.well-known:/usr/share/nginx/html/.well-known
     ports:
       - "80:80"
-      - "8080:8080"
+      - "443:443"
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
   certbot:

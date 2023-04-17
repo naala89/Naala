@@ -28,6 +28,11 @@ See [Configuration Reference][configuration_reference].
 
     yarn build
 
+### Development
+
+    docker compose build
+    docker compose up
+
 ### Production
 
 1. Build the image:

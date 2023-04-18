@@ -26,14 +26,14 @@
                  background-color="#000"
                  text-color="#fff"
                  active-text-color="#ffd04b">
-          <el-menu-item index="1">
-            <a href="https://www.apiopenstudio.com">ApiOpenStudio</a>
+          <el-menu-item>
+            <a href="https://www.apiopenstudio.com" target="_blank">ApiOpenStudio</a>
           </el-menu-item>
-          <el-menu-item index="2">
-            <a href="https://wiki.apiopenstudio.com">ApiOpenStudio Wiki</a>
+          <el-menu-item>
+            <a href="https://wiki.apiopenstudio.com" target="_blank">ApiOpenStudio Wiki</a>
           </el-menu-item>
-          <el-menu-item index="3">
-            <a href="https://phpdoc.apiopenstudio.com">ApiOpenStudio PHPDoc</a>
+          <el-menu-item>
+            <a href="https://phpdoc.apiopenstudio.com" target="_blank">ApiOpenStudio PHPDoc</a>
           </el-menu-item>
         </el-menu>
       </el-col>
@@ -48,9 +48,9 @@
                  background-color="#000"
                  text-color="#fff"
                  active-text-color="#ffd04b">
-          <el-menu-item index="2">Email:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a>
+          <el-menu-item>Email:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a>
           </el-menu-item>
-          <el-menu-item index="2">Phone:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a></el-menu-item>
+          <el-menu-item>Phone:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a></el-menu-item>
         </el-menu>
       </el-col>
 

@@ -43,15 +43,39 @@ In order to set up an initial dummy certificates:
 
 1. Build the image:
 
-   `sudo docker build -t naala-vuejs-app .`
+   `sudo docker compose build`
 
 2. Run the image:
 
-   `sudo docker run -d
-   --restart unless-stopped
-   -p 80:80
-   --name naala-vuejs-app-1
-   naala-vuejs-app`
+   `sudo docker compose up -d`
+
+#### Updating
+
+1. Stop the container:
+
+    `sudo docker compose down`
+
+2. Update the codebase:
+
+    `git pull`
+
+3. Rebuild the container:
+
+    `docker compose builld`
+
+4. Restart the containers:
+
+   `sudo docker compose up -d`
+
+#### Viewing the logs
+
+##### error.log:
+
+    docker logs -f nginx 1>/dev/null
+
+##### access.log:
+
+    docker logs -f nginx 2>/dev/null
 
 View on [http://localhost](http://localhost])
 
@@ -60,6 +84,7 @@ View on [http://localhost](http://localhost])
 * [Dockerize a VueJSApp][dockerize_vuejs]
 * [Containerized Nodejs with Nginx LetsEncrypt and docker-compose][node_letsencrypt]
 * [Docker, Nginx and LetsEncrypt][docker_nginx_letsencrypt]
+* [Nginx Docker view only error logs][docker_nginx_logs]
 
 [dockerize_vuejs]: https://v2.vuejs.org/v2/cookbook/dockerize-vuejs-app.html
 
@@ -68,3 +93,5 @@ View on [http://localhost](http://localhost])
 [configuration_reference]: https://cli.vuejs.org/config/
 
 [docker_nginx_letsencrypt]:https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
+
+[docker_nginx_logs]: https://stackoverflow.com/questions/61564018/in-nginx-docker-how-do-we-see-log-only-from-error-log

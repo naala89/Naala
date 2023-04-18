@@ -16,7 +16,7 @@
                    alt_text="Drupal logo">
       </service-box>
 
-      <service-box title="API, Middleware and Integration"
+      <service-box title="Integration Systems Development"
                    paragraph="We are in a unique position due the history of the company to have a deep understanding of integration, and the modern integration landscape. Particularly API-first design.</p><p>We have even developed an open-source, low-code to enable fast middleware development in an API-first development environment."
                    :image="require('@/assets/images/api.webp')"
                    alt_text="API">

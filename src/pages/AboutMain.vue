@@ -10,7 +10,7 @@
 
     <h2>Experienced delivery of the right solutions</h2>
 
-    <p>Naala is a small boutique digital services agency specialising in APIs, middleware and integration, content
+    <p>Naala is an Australian digital services agency specialising in APIs, middleware and integration, content
       management and development.</p>
     <p>Our philosophy is simple:</p>
 
@@ -27,12 +27,12 @@
     <bio-box name="John Avery"
              title="Technical Director"
              :image="require('@/assets/images/john.jpg')"
-             paragraph="<p>John came from a background as sculptural model-maker, jeweller and goldsmith to the world of web software
-        development after leaving England in 1999. He has worked for Yahoo!7, Bayer (UK), News Ltd, 1-Stop, The
-        Playhouse Group, Australian Doctors Group and several other major companies, and is now the technical director
-        at Naala and specialises in PHP, VueJS, Drupal, APIs & integration, and architecture. John is an active member
-        of the Drupal community.</p><p>He has also worked on many freelance projects, such as Swellnet, VLONE,
-        Sydney Opera House and many more...</p>">
+             paragraph="<p>John came from a background as a sculptural model-maker, jeweller and goldsmith to the world
+        of web software development after leaving England in 1999. He has worked for Yahoo!7, Bayer (UK), News Ltd,
+        1-Stop, The Playhouse Group, Australian Doctors Group and several other major companies, and is now the
+        technical director at Naala and specialises in PHP, VueJS, Drupal, APIs & integration, and architecture. John is
+        an active member of the Drupal community.</p><p>He has also worked on many freelance projects, such as Swellnet,
+        VLONE, Sydney Opera House and many more...</p>">
     </bio-box>
 
   </el-main>
@@ -40,6 +40,7 @@
 
 <script>
 import BioBox from "@/components/BioBox"
+
 export default {
   components: {BioBox},
   BioBox: "bio-box",

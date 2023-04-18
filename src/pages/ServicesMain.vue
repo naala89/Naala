@@ -31,7 +31,7 @@
       </service-box>
 
       <service-box title="Architecture Design"
-                   paragraph="Good, forward thinking architecture is a major business asset.</p><p>We will help you quickly design the best solution for you immediate needs and enable you to cater for growth."
+                   paragraph="Good, forward thinking architecture is a major business asset.</p><p>We will help you quickly design the best solution for your immediate needs and enable you to cater for growth."
                    :image="require('@/assets/images/architecture.jpg')"
                    alt_text="Architecture design">
       </service-box>
@@ -42,6 +42,7 @@
 
 <script>
 import ServiceBox from "@/components/ServiceBox";
+
 export default {
   components: {ServiceBox},
   ServiceBox: "service-box",

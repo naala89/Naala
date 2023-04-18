@@ -8,7 +8,7 @@
 
     <h1>Contact Us</h1>
 
-    <h3>Naala is a boutique digital business based in Sydney, Australia. Our philosophy is to <em>keep things simple, empower our customers and deliver amazing work</em>.</h3>
+    <h2>Naala is a digital business based in Sydney, Australia. Our philosophy is to <em>keep things simple, empower our customers and deliver amazing work</em>.</h2>
     <p>We take an enterprise approach to smaller websites &amp; applications, from detailed planning through to wireframes, project management, testing and delivery.</p>
 
     <el-row type="flex" justify="center">

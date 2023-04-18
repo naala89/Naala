@@ -71,9 +71,9 @@ Possible honeycomb options
     <div class="mod banner home-subheading">
       <div class="inner">
         <div class="bd">
-          <h2>Naala builds engaging websites and mobile applications using leading open source platforms such as Drupal
-            and Magento, and we can help you plan it all as well.</h2>
-          <h3>We work with businesses, digital agencies and freelance developers and designers. <a
+          <h2>Naala builds engaging websites and mobile applications using leading open source platforms such as Drupal,
+            and we can help you plan it all as well.</h2>
+          <h3>We work with businesses, digital agencies, freelance developers and designers. <a
               href="mailto:contact@naala.com.au">Say hello</a> to see what we can do for you.</h3>
         </div>
       </div>
@@ -87,9 +87,10 @@ export default {}
 
 <style scoped lang="scss">
 @import "@/assets/scss/_main.scss";
+
 img {
   max-width: 100%;
-  display:block;
+  display: block;
 }
 
 .home-headline {

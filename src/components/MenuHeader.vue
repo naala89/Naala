@@ -12,6 +12,9 @@
         </router-link>
       </el-menu-item>
       <page-menu></page-menu>
+      <el-menu-item style='margin-left: auto;'>
+        Call us on:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a>
+      </el-menu-item>
     </el-menu>
   </el-header>
 </template>
@@ -29,5 +32,8 @@ export default {
 <style scoped lang="scss">
 .el-menu {
   height: 80px;
+}
+a {
+  color: #ddd;
 }
 </style>

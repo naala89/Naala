@@ -22,9 +22,7 @@
 </template>
 
 <script>
-export default {
-  name: 'BlogMain'
-}
+export default {}
 </script>
 
 <style></style>

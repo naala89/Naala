@@ -16,6 +16,10 @@
   </el-main>
 </template>
 
+<script>
+export default {}
+</script>
+
 <style scoped>
 .naala-card {
   margin-top: 20px;

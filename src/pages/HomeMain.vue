@@ -82,9 +82,7 @@ Possible honeycomb options
 </template>
 
 <script>
-export default {
-  name: 'HomePage'
-}
+export default {}
 </script>
 
 <style scoped lang="scss">

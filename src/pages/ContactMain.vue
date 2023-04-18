@@ -23,9 +23,7 @@
 </template>
 
 <script>
-export default {
-  name: "ContactMain"
-}
+export default {}
 </script>
 
 <style scoped>

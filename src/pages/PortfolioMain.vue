@@ -50,7 +50,6 @@ import PortfolioBox from "@/components/PortfolioBox";
 export default {
   components: {PortfolioBox},
   PortfolioBox: "portfolio-box",
-  name: "PortfolioMain"
 }
 </script>
 

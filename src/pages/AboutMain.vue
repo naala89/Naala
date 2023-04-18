@@ -24,33 +24,26 @@
       enterprise projects and we use that test, track and learn approach for any sized solution. For medium to large
       projects, we have a small army of developers at our disposal.</p>
 
-    <el-card shadow="always" class="bio">
-      <h3>John Avery - Technical Director</h3>
-      <el-container>
-        <img src="@/assets/images/john.jpg" height="250"/>
-        <p>John came from a background as sculptural model-maker, jeweller and goldsmith to the world of web software
-          development after leaving England in 1999. He has worked for Yahoo!7, Bayer (UK), News Ltd, 1-Stop, The
-          Playhouse Group, Australian Doctors Group and several other major companies, and is now the technical director
-          at Naala and specialises in PHP, VueJS, Drupal, APIs & integration, and architecture. John is an active member
-          of the Drupal community.<br/><br/>He has also worked on many freelance projects, such as Swellnet, VLONE,
-          Sydney Opera House and many more...</p>
-      </el-container>
-    </el-card>
+    <bio-box name="John Avery"
+             title="Technical Director"
+             :image="require('@/assets/images/john.jpg')"
+             paragraph="<p>John came from a background as sculptural model-maker, jeweller and goldsmith to the world of web software
+        development after leaving England in 1999. He has worked for Yahoo!7, Bayer (UK), News Ltd, 1-Stop, The
+        Playhouse Group, Australian Doctors Group and several other major companies, and is now the technical director
+        at Naala and specialises in PHP, VueJS, Drupal, APIs & integration, and architecture. John is an active member
+        of the Drupal community.</p><p>He has also worked on many freelance projects, such as Swellnet, VLONE,
+        Sydney Opera House and many more...</p>">
+    </bio-box>
+
   </el-main>
 </template>
 
 <script>
+import BioBox from "@/components/BioBox"
 export default {
-  name: 'AboutMain'
+  components: {BioBox},
+  BioBox: "bio-box",
 }
 </script>
 
-<style scoped lang="scss">
-.bio {
-  margin: 20px 0;
-
-  p {
-    margin: 0 20px;
-  }
-}
-</style>
+<style></style>

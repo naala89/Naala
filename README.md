@@ -1,4 +1,4 @@
-# naala-vue
+# naala
 
 ## Project setup
 

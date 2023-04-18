@@ -35,6 +35,12 @@ See [Configuration Reference][configuration_reference].
 
 ### Production
 
+#### Initial deployment
+
+In order to set up an initial dummy certificates:
+
+    sudo ./init-letsencrypt.sh
+
 1. Build the image:
 
    `sudo docker build -t naala-vuejs-app .`

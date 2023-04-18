@@ -1,7 +1,6 @@
 .DS_Store
 node_modules
-/dist
-
+docker/certbot/conf/*
 
 # local env files
 .env.local

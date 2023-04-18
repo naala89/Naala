@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <RouterView name="Header"></RouterView>
+  <el-container>
+    <RouterView name="LeftSidebar"></RouterView>
+    <RouterView></RouterView>
+    <RouterView name="RightSidebar"></RouterView>
+  </el-container>
+  <RouterView name="Footer"></RouterView>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+<script setup>
+import router from "@/router";
+const defaultTitle = "Naala"
+router.beforeEach((to, from, next) => {
+  document.title = defaultTitle
+  if (to.name) {
+    document.title = document.title + " | " + to.name
   }
-}
+  next()
+})
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "@/assets/scss/_main.scss";
 </style>

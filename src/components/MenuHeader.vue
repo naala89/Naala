@@ -7,13 +7,13 @@
              active-text-color="#A0A4AE"
     >
       <el-menu-item>
-        <router-link :to="{ name: 'Home' }" custom v-slot="{ href, navigate }">
-          <a :href="href" @click="navigate"><img src='@/assets/images/logo-name.png' alt="Naala Logo"></a>
+        <router-link :to="{ name: 'Home' }">
+          <img src='@/assets/images/logo-name.png' alt="Naala Logo">
         </router-link>
       </el-menu-item>
       <page-menu></page-menu>
-      <el-menu-item style='margin-left: auto;'>
-        Call us on:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a>
+      <el-menu-item class="float-right">
+        Call us on:&nbsp;<el-link href="tel:+61279083860">+61 (2) 7908 3860</el-link>
       </el-menu-item>
     </el-menu>
   </el-header>
@@ -35,5 +35,8 @@ export default {
 }
 a {
   color: #ddd;
+}
+.float-right {
+  margin-left: auto;
 }
 </style>

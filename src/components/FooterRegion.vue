@@ -27,13 +27,13 @@
                  text-color="#fff"
                  active-text-color="#ffd04b">
           <el-menu-item>
-            <a href="https://www.apiopenstudio.com" target="_blank">ApiOpenStudio</a>
+            <el-link href="https://www.apiopenstudio.com" target="_blank">ApiOpenStudio</el-link>
           </el-menu-item>
           <el-menu-item>
-            <a href="https://wiki.apiopenstudio.com" target="_blank">ApiOpenStudio Wiki</a>
+            <el-link href="https://wiki.apiopenstudio.com" target="_blank">ApiOpenStudio Wiki</el-link>
           </el-menu-item>
           <el-menu-item>
-            <a href="https://phpdoc.apiopenstudio.com" target="_blank">ApiOpenStudio PHPDoc</a>
+            <el-link href="https://phpdoc.apiopenstudio.com" target="_blank">ApiOpenStudio PHPDoc</el-link>
           </el-menu-item>
         </el-menu>
       </el-col>
@@ -48,9 +48,8 @@
                  background-color="#000"
                  text-color="#fff"
                  active-text-color="#ffd04b">
-          <el-menu-item>Email:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a>
-          </el-menu-item>
-          <el-menu-item>Phone:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a></el-menu-item>
+          <el-menu-item>Email:&nbsp;<el-link href="mailto:contact@naala.com.au">contact@naala.com.au</el-link></el-menu-item>
+          <el-menu-item>Phone:&nbsp;<el-link href="tel:+61279083860">+61 (2) 7908 3860</el-link></el-menu-item>
         </el-menu>
       </el-col>
 

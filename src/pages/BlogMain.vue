@@ -12,9 +12,9 @@
 
     <ul>
       <li>
-        <a href="/blog/lcnc-definition">
+        <el-link href="/blog/lcnc-definition">
           <h4>Low-Code, No-Code, LCNC: The formal definition</h4>
-        </a>
+        </el-link>
       </li>
     </ul>
 

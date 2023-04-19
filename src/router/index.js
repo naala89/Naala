@@ -4,6 +4,7 @@ const { paths } = require('@/router/paths.js')
 const routes = {
     routes: paths,
     history: createWebHistory(),
+    mode: history,
 }
 
 const router = createRouter(routes)

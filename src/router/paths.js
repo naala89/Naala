@@ -33,6 +33,14 @@ const paths = [
             Footer: () => import('@/components/FooterRegion'),
         }
     }, {
+        path: '/contact',
+        name: 'Contact',
+        components: {
+            Header: () => import('@/components/MenuHeader'),
+            default: () => import('@/pages/ContactMain'),
+            Footer: () => import('@/components/FooterRegion'),
+        },
+    }, {
         //     path: '/blog',
         //     name: 'Blog',
         //     components: {
@@ -41,14 +49,6 @@ const paths = [
         //         Footer: () => import('@/components/FooterRegion'),
         //     }
         // }, {
-        path: '/contact',
-        name: 'Contact',
-        components: {
-            Header: () => import('@/components/MenuHeader'),
-            default: () => import('@/pages/ContactMain'),
-            Footer: () => import('@/components/FooterRegion'),
-        }
-        // }, {
         //     path: '/blog/lcnc-definition',
         //     name: 'LCNCDefinition',
         //     components: {
@@ -56,7 +56,6 @@ const paths = [
         //         default: () => import('@/posts/LCNCDefinition'),
         //         Footer: () => import('@/components/FooterRegion'),
         //     },
-    }, {
         path: '/:catchAll(.*)*',
         name: "Not Found",
         components: {

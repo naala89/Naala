@@ -1,12 +1,9 @@
 import {createRouter, createWebHistory} from 'vue-router'
 const { paths } = require('@/router/paths.js')
 
-const routes = {
+const router = createRouter({
     routes: paths,
     history: createWebHistory(),
-    mode: history,
-}
-
-const router = createRouter(routes)
+})
 
 export default router

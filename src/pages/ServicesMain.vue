@@ -9,7 +9,7 @@
     <h1>Services</h1>
     <p>We love learning new things, but right now we're really good at this:</p>
 
-    <el-row gutter="10">
+    <el-row :gutter=10>
       <service-box title="Drupal Development"
                    paragraph="We've been building complex Drupal sites for a few years now and really love the flexibility & scalability of the platform."
                    :image="require('@/assets/images/drupal.png')"
@@ -23,7 +23,7 @@
       </service-box>
     </el-row>
 
-    <el-row gutter="10">
+    <el-row :gutter=10>
       <service-box title="Custom Application Development"
                    paragraph="We work with agencies, startups, individuals and businesses to help them achieve their vision.</p><p>We specialise in bespoke PHP, VueJS and API development."
                    :image="require('@/assets/images/cogs.jpg')"

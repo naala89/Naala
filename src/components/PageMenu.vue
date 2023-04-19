@@ -1,6 +1,9 @@
 <template>
+  <div>
+
+  </div>
   <el-menu-item>
-    <router-link :to="{ name: 'Home' }" custom v-slot="{ href, navigate }" text-color="#fff">
+    <router-link :to="{ name: 'Home' }" custom v-slot="{ href, navigate }">
       <a :href="href" @click="navigate">Home</a>
     </router-link>
   </el-menu-item>

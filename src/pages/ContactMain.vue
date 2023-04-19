@@ -17,8 +17,8 @@
       </el-col>
     </el-row>
     <p>Get in contact with is and see how we can help you with Integrations, API, Web Development, Architecture and Strategy</p>
-    <p>Ring us on:&nbsp;<a href="tel:+61279083860">+61 (2) 7908 3860</a></p>
-    <p>Email us on:&nbsp;<a href="mailto:contact@naala.com.au">contact@naala.com.au</a></p>
+    <p>Ring us on:&nbsp;<el-link href="tel:+61279083860">+61 (2) 7908 3860</el-link></p>
+    <p>Email us on:&nbsp;<el-link href="mailto:contact@naala.com.au">contact@naala.com.au</el-link></p>
   </el-main>
 </template>
 

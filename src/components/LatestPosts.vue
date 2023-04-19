@@ -5,7 +5,7 @@
            active-text-color="#ffd04b">
     <el-menu-item index="1">
       <router-link :to="{ name: 'LCNCDefinition' }" custom v-slot="{ href, navigate }">
-        <a :href="href" @click="navigate">Low-Code, No-Code, LCNC: The formal definition</a>
+        <el-link :href="href" @click="navigate">Low-Code, No-Code, LCNC: The formal definition</el-link>
       </router-link>
     </el-menu-item>
     <el-menu-item index="2">

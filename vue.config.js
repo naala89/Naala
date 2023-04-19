@@ -6,7 +6,10 @@ module.exports = defineConfig({
   transpileDependencies: true,
   configureWebpack: {
     plugins: [
-      new SitemapPlugin({ base: 'https://www.naala.com.au', paths })
+      new SitemapPlugin({
+        base: 'https://www.naala.com.au',
+        paths
+      })
     ]
   },
   css: {

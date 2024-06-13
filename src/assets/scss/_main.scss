@@ -42,3 +42,46 @@ h5 {
 .el-breadcrumb {
     margin-top: 20px;
 }
+
+.cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.card {
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+}
+
+@media (min-width: 480px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 992px) {
+    .cards { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1200px) {
+    .cards { grid-template-columns: repeat(5, 1fr); }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0
+}

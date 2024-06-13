@@ -78,6 +78,20 @@ Possible honeycomb options
         </div>
       </div>
     </div>
+
+    <div class="mod banner home-subheading">
+      <div class="bd">
+        <h2>Partners</h2>
+        <div class="cards">
+          <div class="card">
+            <a href="https://app.mrpeasy.com/ctrl/partner/link/289" title="MRPeasy" rel="home" target="_blank">
+              <img src="https://www.mrpeasy.com/wp-content/themes/mrpeasy/assets/dist/gfx/mrpeasy-logo.svg" alt="MRPeasy" width="177" height="40">
+              <span class="sr-only">MRPeasy</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </el-main>
 </template>
 

@@ -61,7 +61,7 @@ In order to set up an initial dummy certificates:
 
 3. Rebuild the container:
 
-    `docker compose builld`
+    `docker compose build`
 
 4. Restart the containers:
 

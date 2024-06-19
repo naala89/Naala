@@ -6,6 +6,19 @@ Possible honeycomb options
 -->
 <template>
   <el-main class="naala-main">
+
+
+    <div class="mod banner home-message">
+      <div class="inner">
+        <div class="bd">
+          <div>We are looking for developers (any language) to join us in a short feedback session, to get input and comments on a unique business model that is in the proof of concept phase.</div>
+          <br />
+          <div>Would you have 30 minutes for a feedback session? We're flexible so let us know what time is best for you. If so, contact us on <a
+              href="mailto:contact@naala.com.au">contact@naala.com.au</a> or <a href="tel:+61279083860">+61 (2) 7908 3860</a></div>
+        </div>
+      </div>
+    </div>
+
     <div class="mod hero">
       <div class="inner">
         <div class="bd">
@@ -147,6 +160,36 @@ img {
 
   a {
     color: #fff;
+  }
+}
+
+.home-message {
+  background: $brand-yellow;
+  text-transform: lowercase;
+
+  .inner {
+    min-width: 100%;
+    display: flex;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 1em 20px;
+    text-align: center;
+    color: #fff;
+    @include fontSize(21px);
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0 20px 1em 20px;
+    text-align: center;
+    color: #fff;
+    @include fontSize(16px);
+  }
+
+  a {
+    color: $brand-green;
   }
 }
 

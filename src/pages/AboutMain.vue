@@ -27,12 +27,20 @@
     <bio-box name="John Avery"
              title="Technical Director"
              :image="require('@/assets/images/john.jpg')"
-             paragraph="<p>John came from a background as a sculptural model-maker, jeweller and goldsmith to the world
-        of web software development after leaving England in 1999. He has worked for Yahoo!7, Bayer (UK), News Ltd,
-        1-Stop, The Playhouse Group, Australian Doctors Group and several other major companies, and is now the
-        technical director at Naala and specialises in PHP, VueJS, Drupal, APIs & integration, and architecture. John is
-        an active member of the Drupal community.</p><p>He has also worked on many freelance projects, such as Swellnet,
-        VLONE, Sydney Opera House and many more...</p>">
+             paragraph="<p>John came from a background to the world of web software development after leaving England in
+             1999. He has worked for Yahoo!7, Bayer (UK), News Ltd, 1-Stop, The Playhouse Group, Australian Doctors
+             Group and several other major companies, and is now the technical director at Naala and specialises in PHP,
+             VueJS, Drupal, APIs & integration, and architecture. John is an active member of the Drupal community.</p>
+             <p>He has also worked on many freelance projects, such as Swellnet, VLONE, Sydney Opera House and many
+             more...</p>">
+    </bio-box>
+
+    <bio-box name="Matt Greally"
+             title="Business Director"
+             :image="require('@/assets/images/matt.jpeg')"
+             paragraph="<p>Matt's background includes over 15 years of solution sales in SaaS and Digital Agencies. He
+             has extensive experience in new product launches. Even winning a Hackathon while working in sales.</p>
+             <p>He has has worked for several successful unicorn's that have successfully IPO'd, such as NetSuite, BigCommerce and Zuora</p>">
     </bio-box>
 
   </el-main>
@@ -42,7 +50,7 @@
 import BioBox from "@/components/BioBox"
 
 export default {
-  components: {BioBox},
+  components: { BioBox },
   BioBox: "bio-box",
 }
 </script>

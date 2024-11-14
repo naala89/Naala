@@ -8,16 +8,16 @@ Possible honeycomb options
   <el-main class="naala-main">
 
 
-    <div class="mod banner home-message">
-      <div class="inner">
-        <div class="bd">
-          <div>We are looking for developers (any language) to join us in a short feedback session, to get input and comments on a unique business model that is in the proof of concept phase.</div>
-          <br />
-          <div>Would you have 30 minutes for a feedback session? We're flexible so let us know what time is best for you. If so, contact us on <a
-              href="mailto:contact@naala.com.au">contact@naala.com.au</a> or <a href="tel:+61279083860">+61 (2) 7908 3860</a></div>
-        </div>
-      </div>
-    </div>
+<!--    <div class="mod banner home-message">-->
+<!--      <div class="inner">-->
+<!--        <div class="bd">-->
+<!--          <div>We are looking for developers (any language) to join us in a short feedback session, to get input and comments on a unique business model that is in the proof of concept phase.</div>-->
+<!--          <br />-->
+<!--          <div>Would you have 30 minutes for a feedback session? We're flexible so let us know what time is best for you. If so, contact us on <a-->
+<!--              href="mailto:contact@naala.com.au">contact@naala.com.au</a> or <a href="tel:+61279083860">+61 (2) 7908 3860</a></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
     <div class="mod hero">
       <div class="inner">
@@ -86,21 +86,35 @@ Possible honeycomb options
         <div class="bd">
           <h2>Naala builds engaging websites and mobile applications using leading open source platforms such as Drupal,
             and we can help you plan it all as well.</h2>
-          <h3>We work with businesses, digital agencies, freelance developers and designers. <a
-              href="mailto:contact@naala.com.au">Say hello</a> to see what we can do for you.</h3>
+
         </div>
       </div>
     </div>
 
     <div class="mod banner home-subheading">
       <div class="bd">
-        <h2>Partners</h2>
+        <h2>Example work</h2>
         <div class="cards">
           <div class="card">
-            <a href="https://app.mrpeasy.com/ctrl/partner/link/289" title="MRPeasy" rel="home" target="_blank">
-              <img src="https://www.mrpeasy.com/wp-content/themes/mrpeasy/assets/dist/gfx/mrpeasy-logo.svg" alt="MRPeasy" width="177" height="40">
-              <span class="sr-only">MRPeasy</span>
+            <a href="https://www.sydneyoperahouse.com/" title="Sydney Opera House" rel="home" target="_blank">
+              Sydney Opera house
+              <img src="https://www.sydneyoperahouse.com/themes/custom/soh/assets/images/logos/soh-logo.svg" alt="Sydney Opera house" width="177" height="40">
+              <span class="sr-only">Sydney Opera house</span>
             </a>
+          </div>
+          <div class="card">
+            <a href="https://www.apiopenstudio.com/" title="ApiOpenStudio" rel="home" target="_blank">
+              ApiOpenStudio
+              <img src="https://www.apiopenstudio.com/wp-content/uploads/2021/03/APIOpenStudio_Logo_Name_Colour-e1616129856362.png" alt="ApiOpenStudio" width="177" height="40">
+              <span class="sr-only">ApiOpenStudio</span>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://www.swellnet.com/" title="Swellnet" rel="home" target="_blank">
+              Swellnet
+            </a>
+            <img src="https://www.swellnet.com/assets/img/content/swellnet-logo--dark.svg" alt="Swellnet" width="177" height="40">
+            <span class="sr-only">Swellnet</span>
           </div>
         </div>
       </div>

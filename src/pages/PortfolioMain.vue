@@ -8,6 +8,20 @@
 
     <h1>Portfolio</h1>
 
+    <portfolio-box link="https://www.apiopenstudio.com/"
+                   :image="require('@/assets/images/apiopenstudio-logo-came-colour.png')"
+                   alt_text="ApiOpenStudio"
+                   image_bg="white"
+                   title="ApiOpenStudio"
+                   subtext="Low Code API building & Management tool"></portfolio-box>
+
+    <portfolio-box link="https://www.sydneyoperahouse.com/"
+                   :image="require('@/assets/images/sydney-opera-house.jpg')"
+                   alt_text="Sydney Opera House"
+                   image_bg="white"
+                   title="Sydney Opera House"
+                   subtext="Drupal site and API Integration"></portfolio-box>
+
     <portfolio-box link="https://www.caresouth.org.au/"
                    :image="require('@/assets/images/caresouth.jpg')"
                    alt_text="CareSouth"
